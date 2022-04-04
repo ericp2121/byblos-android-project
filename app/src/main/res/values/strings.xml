@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources
+    [<!ENTITY username "Eric-test-2"><!ENTITY role "Developer-test-2">]>
+
+
+<resources>
+    <string name="app_name">Byblos</string>
+    <string name="greeting">Welcome to Byblos!</string>
+    <string name="username">Welcome, &username; </string>
+    <string name="role">You are currently logged in as: &role; </string>
+    <string name="menu_prompt">Select a service</string>
+
+    <string name="licenseSelect">Select a license type</string>
+    <string name="carSelect">Select a car</string>
+
+    <string-array name="serviceOptions">
+        <item>Car rentals</item>
+        <item>Moving assistance</item>
+        <item>Truck rentals</item>
+    </string-array>
+
+    <string-array name="licenses">
+        <item>G</item>
+        <item>G2</item>
+        <item>Other Province License (Equivalent to G2 or higher)</item>
+    </string-array>
+
+    <string-array name="cars">
+        <item>Toyota Corolla 2020</item>
+        <item>Honda CR-V 2020</item>
+        <item>Buick Enclave 2020</item>
+    </string-array>
+
+</resources>

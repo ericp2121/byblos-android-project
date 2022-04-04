@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_MovingAssistance">
+
+    <TextView
+        android:id="@+id/welcomeAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="Welcome to Admin services: Moving assistance"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <EditText
+        android:id="@+id/firstNameEditor"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <EditText
+        android:id="@+id/lastNameEditor"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:ems="10"
+
+        android:gravity="center"
+
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <EditText
+        android:id="@+id/birthEditor"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:ems="10"
+
+        android:gravity="center"
+        android:hint="Birthdate"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <EditText
+        android:id="@+id/addressEditor"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <EditText
+        android:id="@+id/emailEditor"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <EditText
+        android:id="@+id/startEditor"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="Starting Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <EditText
+        android:id="@+id/endEditor"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="Ending Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <EditText
+        android:id="@+id/numMoversEditor"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="Number of Movers (est.)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <EditText
+        android:id="@+id/numBoxEditor"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="Number of Boxes (est.)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <Button
+        android:id="@+id/enterAll"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+
+        android:text="Generate Moving Assistance Request"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/btnEstimateMove"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+
+        android:text="Get an estimate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEditor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditor"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <TextView
+        android:id="@+id/estimateOutput"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+
+        android:gravity="center"
+        android:hint="Estimated price"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

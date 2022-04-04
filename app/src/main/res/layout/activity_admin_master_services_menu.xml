@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_master_services_menu">
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+
+        android:text="Add Service to Byblos"
+        app:layout_constraintBottom_toTopOf="@+id/deleteOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeAdmin" />
+
+    <Button
+        android:id="@+id/btnRemove"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="Delete Service from Byblos"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteOptions"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <Spinner
+        android:id="@+id/deleteOptions"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/btn_dropdown"
+
+        android:gravity="center"
+        android:prompt="@string/menu_prompt"
+
+        android:spinnerMode="dialog"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="Welcome to the Byblos services portal"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text=""
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcomeAdmin"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <EditText
+        android:id="@+id/addService"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Service to add"
+        android:inputType="textPersonName"
+
+
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
